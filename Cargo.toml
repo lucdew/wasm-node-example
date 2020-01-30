@@ -1,0 +1,21 @@
+[package]
+name = "wasm-node-example"
+version = "0.1.0"
+authors = ["lucdew <lucdew@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+rsa = { git = "https://github.com/lucdew/RSA", branch = "oaep"}
+num-bigint = { version = "0.6", features = ["rand", "i128", "u64_digit", "prime", "zeroize"], package = "num-bigint-dig" }
+num-traits = "0.2.6"
+rand = { version = "0.7.3", features = ["wasm-bindgen"] }
+sha2 = "0.8.0"
+hex = "0.4.0"
+serde = { version = "1.0", features = ["derive"] }
+wasm-bindgen = { version = "0.2", features=["serde-serialize"] }
+console_error_panic_hook = "0.1.6"
+#wasm-bindgen-futures = { version = "0.4.8"}
+#js-sys = "0.3"
+
+[lib]
+crate-type = ["cdylib"]

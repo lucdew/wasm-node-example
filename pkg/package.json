@@ -1,0 +1,15 @@
+{
+  "name": "wasm-node-example",
+  "collaborators": [
+    "lucdew <lucdew@users.noreply.github.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "wasm_node_example_bg.wasm",
+    "wasm_node_example.js",
+    "wasm_node_example_bg.js",
+    "wasm_node_example.d.ts"
+  ],
+  "main": "wasm_node_example.js",
+  "types": "wasm_node_example.d.ts"
+}
