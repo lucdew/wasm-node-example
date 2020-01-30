@@ -19,3 +19,6 @@ wasm-pack build --release --target nodejs
 # Usage
 
 `node index.js`
+
+if you validate with openssl (that must be in the PATH)
+`OPENSSL_VAL=1 node index.js`

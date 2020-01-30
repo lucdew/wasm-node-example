@@ -5,7 +5,7 @@ authors = ["lucdew <lucdew@users.noreply.github.com>"]
 edition = "2018"
 
 [dependencies]
-rsa = { git = "https://github.com/lucdew/RSA", branch = "oaep"}
+rsa = { git = "https://github.com/lucdew/RSA", rev = "40e64cc986f223fa8be1de1fd8dcf34622a9ce72"}
 num-bigint = { version = "0.6", features = ["rand", "i128", "u64_digit", "prime", "zeroize"], package = "num-bigint-dig" }
 num-traits = "0.2.6"
 rand = { version = "0.7.3", features = ["wasm-bindgen"] }
