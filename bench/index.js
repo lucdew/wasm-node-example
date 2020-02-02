@@ -1,5 +1,6 @@
 const stats = require("stats-lite");
 const nodeforgecrypto = require("./nodeforgecrypto");
+const nodecrypto = require("./nodecrypto");
 const wasmcrypto = require("./wasmcrypto");
 
 // return time in micros
@@ -61,8 +62,10 @@ const data = Buffer.from(
   "hello from hello from hello from hello from hello from hello from hello from hello from ",
   "ascii"
 ).toString("hex");
+const nodeStats = bench("node", nodecrypto.encryptDecrypt, data, ITER);
 const wasmStats = bench("wasm", wasmcrypto.encryptDecrypt, data, ITER);
 const nfStats = bench("node-forge", nodeforgecrypto.encryptDecrypt, data, ITER);
 
+console.log("node result=" + JSON.stringify(nodeStats));
 console.log("node forge result=" + JSON.stringify(nfStats));
 console.log("wasm result=" + JSON.stringify(wasmStats));
