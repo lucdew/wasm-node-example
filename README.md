@@ -30,8 +30,8 @@ The output is written in the pkg directory.
 # Performance
 I did a comparison with [node-forge](https://github.com/digitalbazaar/forge "node-forge") which is purely implemented in Javascript and here are the results on a 2Ghz cpu (time in ms):
 ```
-node forge result={"mean":25.711784426678594,"median":25.00139099964872,"sum":7713.535328003578,"p90":27.446467999834567}
-wasm result={"mean":12.430581233302751,"median":12.093277499545366,"sum":3729.1743699908257,"p90":13.090865499805659}
+node forge result={"min":24.184990000911057,"max":74.23670900054276,"mean":25.25469315670741,"median":24.69815900037065,"sum":7576.407947012223,"p90":25.77102949982509}
+wasm result={"min":11.710200999863446,"max":27.13322600070387,"mean":12.118071400001645,"median":11.939763499889523,"sum":3635.4214200004935,"p90":12.57686399994418}
 ```
 Basically wasm is 2 times faster.
 

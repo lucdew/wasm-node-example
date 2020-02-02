@@ -28,6 +28,8 @@ class Measure {
 function toStats(measures) {
   const times = measures.map(m => m.execTime);
   return {
+    min: Math.min(...times),
+    max: Math.max(...times),
     mean: stats.mean(times),
     median: stats.median(times),
     sum: stats.sum(times),
