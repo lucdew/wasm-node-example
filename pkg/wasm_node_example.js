@@ -146,6 +146,14 @@ module.exports.__wbg_error_4bb6c2a97407129a = function(arg0, arg1) {
     }
 };
 
+module.exports.__wbg_randomFillSync_d5bd2d655fdf256a = function(arg0, arg1, arg2) {
+    getObject(arg0).randomFillSync(getArrayU8FromWasm0(arg1, arg2));
+};
+
+module.exports.__wbg_getRandomValues_f5e14ab7ac8e995d = function(arg0, arg1, arg2) {
+    getObject(arg0).getRandomValues(getArrayU8FromWasm0(arg1, arg2));
+};
+
 module.exports.__wbg_self_1b7a39e3a92c949c = function() {
     try {
         var ret = self.self;
@@ -173,14 +181,6 @@ module.exports.__wbindgen_is_undefined = function(arg0) {
 module.exports.__wbg_getRandomValues_a3d34b4fee3c2869 = function(arg0) {
     var ret = getObject(arg0).getRandomValues;
     return addHeapObject(ret);
-};
-
-module.exports.__wbg_getRandomValues_f5e14ab7ac8e995d = function(arg0, arg1, arg2) {
-    getObject(arg0).getRandomValues(getArrayU8FromWasm0(arg1, arg2));
-};
-
-module.exports.__wbg_randomFillSync_d5bd2d655fdf256a = function(arg0, arg1, arg2) {
-    getObject(arg0).randomFillSync(getArrayU8FromWasm0(arg1, arg2));
 };
 wasm = require('./wasm_node_example_bg');
 
